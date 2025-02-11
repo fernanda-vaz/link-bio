@@ -1,0 +1,36 @@
+@use 'variables' as vars;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Space Grotesk', serif;
+  text-decoration: none;
+  background-color: vars.$color-bg;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$color-white;
+}
+
+.cards-container {
+  border: 1px solid vars.$color-light-blue;
+  border-radius: 12px;
+  padding: 1rem;
+  color: vars.$color-white;
+  transition: transform 0.3s ease;
+  width: 380px;
+  min-height: 88px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

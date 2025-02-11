@@ -1,0 +1,27 @@
+@use 'variables' as vars;
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .portfolio-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  &:hover {
+    background-color: vars.$color-medium-blue;
+  }
+}

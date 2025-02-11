@@ -1,0 +1,37 @@
+@use 'variables' as vars;
+
+.banner {
+  min-width: 420px;
+  min-height: 140px;
+  background: url('/banner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.5rem;
+  gap: 0.3rem;
+  text-align: center;
+  color: vars.$color-white;
+  padding-bottom: 1rem;
+
+  img {
+    box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}

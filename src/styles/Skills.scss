@@ -1,0 +1,139 @@
+@use 'variables' as vars;
+
+.skills {
+    padding: 1rem 2rem;
+  
+    h3 {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0 0.3rem 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .skills-icons {
+      padding: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+  
+      .icon-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+  
+        .html {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/html-hover.svg');
+          }
+        }
+  
+        .css {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/css-hover.svg');
+          }
+        }
+  
+        .js {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/js-hover.svg');
+          }
+        }
+  
+        .react {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/react-hover.svg');
+          }
+        }
+  
+        .sass {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/sass-hover.svg');
+          }
+        }
+  
+        .styled {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/styled-components-hover.svg');
+          }
+        }
+  
+        .tailwind {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/tailwindcss-hover.svg');
+          }
+        }
+  
+        .node {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/node-hover.svg');
+          }
+        }
+  
+        .figma {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/figma-hover.svg');
+          }
+        }
+  
+        .git {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/git-hover.svg');
+          }
+        }
+  
+        .github {
+          transition: opacity 0.3s ease-in-out;
+  
+          &:hover {
+            content: url('/icons/github-hover.svg');
+          }
+        }
+  
+        .caption {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: -10px;
+          text-align: center;
+          white-space: nowrap;
+          font-size: 8px;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+  
+        &:hover {
+          .caption {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  

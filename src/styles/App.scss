@@ -1,0 +1,23 @@
+@use 'variables' as vars;
+
+.container {
+  background-color: vars.$color-bg;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: 1rem;
+  width: 420px;
+  height: 100%;
+  background-color: vars.$color-bg-links;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,31 @@
+@use 'variables' as vars;
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0 1rem;
+  gap: 1rem;
+
+    .btn {
+        background-color: vars.$color-medium-blue;
+        color: vars.$color-white;
+    }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+
+    a {
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        opacity: 0.75;
+      }
+    }
+  }
+}
