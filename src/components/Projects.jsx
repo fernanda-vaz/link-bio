@@ -1,6 +1,13 @@
 import { Drawer } from '@mui/material'
 import { useState } from 'react'
 import '../styles/Projects.scss'
+import { motion } from 'motion/react'
+
+const transition = {
+  duration: 0.5,
+  delay: 0.7,
+  ease: [0, 0.71, 0.2, 1.01],
+}
 
 const Projects = () => {
   const [openProjects, setOpenProjecs] = useState(false)
@@ -10,15 +17,20 @@ const Projects = () => {
   }
 
   return (
-    <div className='cards-container projects'>
+    <motion.div 
+      className='cards-container projects'
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={transition}
+    >
       <div className='projects-content' id='dropdown-trigger'>
-        <img src='./public/icons/projects.svg' alt='' />
+        <img src='/icons/projects.svg' alt='' />
         <h3>Projetos</h3>
       </div>
 
       <img
         id='see-projects'
-        src='./public/icons/arrow-down.svg'
+        src='/icons/arrow-down.svg'
         alt=''
         className='arrow-icon'
         onClick={handleOpenProjects}
@@ -53,7 +65,7 @@ const Projects = () => {
           </div>
         </div>
       </Drawer>
-    </div>
+    </motion.div>
   )
 }
 

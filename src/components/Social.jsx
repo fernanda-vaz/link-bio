@@ -1,9 +1,21 @@
 import { Button } from '@mui/material'
 import '../styles/Social.scss'
+import { motion } from 'motion/react'
+
+const transition = {
+  duration: 0.5,
+  delay: 0.9,
+  ease: [0, 0.71, 0.2, 1.01],
+}
 
 const Social = () => {
   return (
-    <div className='social-container'>
+    <motion.div
+      className='social-container'
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={transition}
+    >
       <Button
         className='btn'
         variant='contained'
@@ -29,11 +41,11 @@ const Social = () => {
         <a href='https://instagram.com/fevaz'>
           <img src='/icons/instagram.svg' alt='' />
         </a>
-        <a href='https://tiktok.com/@fevaz'>
+        <a href='https://tiktok.com/@_fevaz'>
           <img src='/icons/tiktok.svg' alt='' />
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

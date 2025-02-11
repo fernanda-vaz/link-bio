@@ -1,8 +1,20 @@
 import '../styles/Skills.scss'
+import { motion } from 'motion/react'
+
+const transition = {
+  duration: 0.5,
+  delay: 0.3,
+  ease: [0, 0.71, 0.2, 1.01],
+}
 
 const Skills = () => {
   return (
-    <div className='cards-container skills'>
+    <motion.div
+      className='cards-container skills'
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={transition}
+    >
       <h3>Tecnologias</h3>
       <div className='skills-icons'>
         <div className='icon-container'>
@@ -54,7 +66,7 @@ const Skills = () => {
           <img className='icon github' src='/icons/github.svg' alt='' />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
