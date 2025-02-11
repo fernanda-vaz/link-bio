@@ -9,7 +9,7 @@ const transition = {
 
 const Portfolio = () => {
   return (
-    <motion.div 
+    <motion.div
       className='cards-container portfolio'
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
@@ -17,10 +17,10 @@ const Portfolio = () => {
     >
       <a href='https://fernanda-vaz.github.io/portfolio/'>
         <div className='portfolio-content'>
-          <img src='/icons/web.svg' alt='' />
+          <img src='./icons/web.svg' alt='' />
           <h3>Portfólio</h3>
         </div>
-        <img src='/icons/arrow-go.svg' alt='' />
+        <img src='./icons/arrow-go.svg' alt='' />
       </a>
     </motion.div>
   )

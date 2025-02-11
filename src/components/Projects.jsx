@@ -17,20 +17,20 @@ const Projects = () => {
   }
 
   return (
-    <motion.div 
+    <motion.div
       className='cards-container projects'
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={transition}
     >
       <div className='projects-content' id='dropdown-trigger'>
-        <img src='/icons/projects.svg' alt='' />
+        <img src='./icons/projects.svg' alt='' />
         <h3>Projetos</h3>
       </div>
 
       <img
         id='see-projects'
-        src='/icons/arrow-down.svg'
+        src='./icons/arrow-down.svg'
         alt=''
         className='arrow-icon'
         onClick={handleOpenProjects}

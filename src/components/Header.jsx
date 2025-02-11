@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className='banner'></div>
       <div className='profile'>
-        <img src='/profile.png' alt='' />
+        <img src='./profile.png' alt='foto de perfil' />
         <p>@fevaz</p>
 
         <div>

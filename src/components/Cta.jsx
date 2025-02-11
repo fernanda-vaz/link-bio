@@ -16,7 +16,7 @@ const CTA = () => {
       transition={transition}
     >
       <a href='https://buymeacoffee.com/fernandavaz' className='cta-container'>
-        <img src='/icons/buy-me-a-coffee.svg' alt='' />
+        <img src='./icons/buy-me-a-coffee.svg' alt='' />
         <p>buy me a coffee? (:</p>
       </a>
       <a
@@ -24,7 +24,7 @@ const CTA = () => {
         className='cta-container'
       >
         <p>Tem um projeto em mente?</p>
-        <img src='/icons/whatsapp.svg' alt='' />
+        <img src='./icons/whatsapp.svg' alt='' />
       </a>
     </motion.div>
   )
